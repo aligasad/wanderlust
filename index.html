@@ -1,132 +1,242 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+  <title>Page Title</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Rubik+Distressed&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d300c1b491.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-        body {
-            margin: 0;
-            padding: 8px;
-        }
+    /* Style the body */
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
 
-        nav {
-            background-color: #333;
-            width: 100%;
-            float: left;
-        }
+    /* Header/logo Title */
+    .header {
+      padding: 40px;
+      text-align: center;
+      background: #1abc9c;
+      color: white;
+    }
 
-        nav a {
-            float: left;
-            padding: 16px;
-            color: #fff;
-            text-decoration: none;
-        }
+    /* Style the top navigation bar */
+    .navbar {
+      display: flex;
+      background-color: #333;
+    }
 
-        .activared {
-            background-color: seagreen;
-        }
+    /* Style the navigation bar links */
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
 
-        nav a:hover {
-            background-color: royalblue;
-            transition: 3s;
-        }
+    /* Change color on hover */
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
 
-        .row {
-            padding: 8px;
-            float: left;
-            width: 100%;
-        }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-        .row div {
-            float: left;
-            margin: 8px;
-            width: calc(50% - 16px);
-        }
+    .side {
+      flex: 30%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
 
-        .raw image {
-            border-radius: 8px;
-            overflow: hidden;
-            height: px;
-            border: 5px solid;
-        }
+    .main {
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+    }
 
-        .image img {
-            height: 200px;
-            width: 200px;
-            /* float: center; */
-        }
+    .school {
+      word-break: break-all;
+      word-spacing: 2px;
+      background-color: rgba(75, 76, 73, 0.458);
+      width: 100%;
+      padding: 20px;
+    }
 
-        footer {
-            background-color: #333;
-            text-align: center;
-            color: rgb(195, 51, 51);
-            padding: 16px;
-            float: left;
-            width: 100%;
-        }
+    .image {
+      background-color: tomato;
+      width: 100%;
+      padding: 20px;
+    }
 
-        .main {
-            width: 100%;
-            float: left;
-        }
+    #footer {
+      padding: 20px;
+      text-align: center;
+      background: rgb(120, 31, 31);
+    }
 
-        .text {
-            /* width: 100%; */
-            float: right;
-        }
+    @media screen and (max-width: 700px) {
 
-        .image {
-            /* width: calc(25%); */
-            padding-left: 50px;
-        }
-        p{
-            float: right;
-            width: 100%;
-        }
-        h1{
-            text-align: center;
-            background-color: yellowgreen;
-            /* width: 20%; */
-        }
-        h1:hover{
-            background-color: tomato;
-            cursor: pointer;
-            transition: 3s;
-        }
-        footer{
-            cursor: pointer;
-        }
-    </style>
+      .row,
+      .navbar {
+        flex-direction: column;
+      }
+    }
+    @media  screen and (max-width: 400px) {
+      h1{
+        text-align: center;
+      }
+    }
+
+    .navbar a:hover {
+      background-color: rgb(195, 30, 30);
+      transition: 2s;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: DynaPuff;
+      font-size: 38px;
+      /* font-family: DynaPuff; */
+      cursor: pointer;
+      text-shadow: 3px 3px 4px black;
+    }
+
+    h1:hover {
+      color: darkred;
+      transition: 2s;
+    }
+
+    h2 {
+      padding: 8px;
+      font-family: DynaPuff;
+      cursor: pointer;
+    }
+
+    h2:hover {
+      background-color: chartreuse;
+      padding: 8px;
+      transition: 3s;
+    }
+
+    .email:hover {
+      transition: 2s;
+      cursor: zoom-in;
+      background-color: rgb(162, 195, 28);
+    }
+
+    h4 {
+      font-size: 0.5cm;
+      font-family: DynaPuff;
+    }
+
+    .email {
+      padding: 5px;
+      background-color: #fff;
+      color: black;
+      border: solid 3px black;
+      border-radius: 9px;
+      text-decoration: none;
+    }
+    .shairy{
+      cursor: pointer;
+      text-shadow: 4px 4px 6px rgb(200, 172, 14);
+      word-spacing: 2px;
+      font-size: 19px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .shairy:hover{
+      transition: 3s;
+      color: crimson;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="main">
-        <nav>
-            <a href="https://instagram.com/erimransamraat?igshid=YmMyMTA2M2Y=">IMRAN ALAM</a>
-            <a href="https://instagram.com/tanveer.alig?igshid=YmMyMTA2M2Y=" class="gal">TANVEER ALAM</a>
-            <a href="https://instagram.com/wanderlust__026?igshid=YmMyMTA2M2Y=" class="activared">ASAD ALAM</a>
-            <a href="tel:7417331926">Contect</a>
-        </nav>
-        <h1>ASAD ALAM</h1>
-        <div class="raw">
-            <div class="image">
-                <!-- <iframe src="https://wanderlust026.blogspot.com/2022/08/blog-post.html"></iframe> -->
-                <img src="https://scontent.flko7-1.fna.fbcdn.net/v/t1.6435-9/69085719_2551360065150544_2143911102793121792_n.jpg?stp=c0.223.1340.1340a_dst-jpg_s851x315&_nc_cat=111&ccb=1-7&_nc_sid=da31f3&_nc_ohc=FoBPAhF6lBYAX_j6_V0&_nc_ht=scontent.flko7-1.fna&oh=00_AT_-27eewnn7ig_pzJsJeT9f2Gx07lFa-mhyAnbQYuSnzA&oe=633139C4" alt="">
-                <h5><u><i>ALIGARIAN</i></u></h5>
-            </div>
-        </div>
+
+  <!-- Note -->
+  <div style="background:yellow;padding:5px">
+    <h4 style="text-align:center"><b>ABOUT MYSELF</b></h4>
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>@wanderlust__026</h1>
+    <a class="email" href="mailto:asadalam4291@gmail.com">asadalam4291@gmail.com</a>
+  </div>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="https://www.facebook.com/asadalam.alam.7"><i class="fa-brands fa-facebook"></i> Facebook</a>
+    <a href="https://instagram.com/wanderlust__026?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i> Instagram</a>
+    <a href="tel:7417331926"><i class="fa-solid fa-address-book"></i> Contact</a>
+    <a href="#footer"><i class="fa-solid fa-circle-info"></i> About</a>
+  </div>
+  <!-- The flexible grid (content) -->
+  <div class="row">
+    <div class="side">
+      <h2>ASAD ALAM</h2>
+      <h5>In Aligarh - Jan 2010 to July 2022</h5>
+      <h5>Current Location - Lucknow(UP32)</h5>
+      <div class="image"><img src="/mypic.jpg" height="300px"></div>
     </div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, iure nesciunt laborum cumque, labore dicta perferendis ratione qui similique dolor libero inventore explicabo quos nam consequatur neque voluptates, odit accusamus accusantium suscipit aperiam consequuntur? Pariatur vitae reiciendis quas veniam impedit libero? Similique dicta illum magni laboriosam, sit veniam praesentium eveniet amet voluptatem quaerat laudantium perspiciatis optio nostrum quasi temporibus repellat, reprehenderit minus? Repellendus laudantium, nobis minima ipsa consequuntur saepe ratione nemo a distinctio! Quibusdam, quis cupiditate? Minima dolor sint et ut autem omnis possimus dignissimos esse eveniet. Quisquam mollitia voluptas laboriosam vitae repellat aspernatur eveniet quo hic, nostrum recusandae magni nihil suscipit aliquam ullam dolorem, eius eum explicabo laudantium doloremque accusantium. Sint perferendis explicabo iste nulla temporibus nihil unde suscipit a quia delectus nostrum laudantium iure, consequuntur eligendi ducimus, doloremque, maiores sunt. Iste recusandae a libero at, consequatur sequi possimus eum nesciunt alias quia quas ratione, voluptate modi, eligendi ipsam atque nam. Laboriosam labore vitae, aliquam mollitia reiciendis temporibus unde corrupti eius perferendis odit voluptatem quas tempora ratione iste officiis nulla veritatis doloribus dolorem adipisci? Magni enim optio, odit corporis molestiae quaerat ut quibusdam exercitationem voluptas sequi, quae ab, atque id saepe quasi blanditiis. Quo voluptate quis ullam quaerat odit at, nesciunt unde eius a repellendus eligendi quam odio necessitatibus amet, placeat fuga alias ab nostrum, aut doloribus dolor facilis. Excepturi est modi officia voluptate inventore doloribus quia cum animi repudiandae rerum reprehenderit, quo architecto explicabo dolores odit numquam fugit ullam, cupiditate ratione? Consectetur vitae qui facilis magni, id maiores fugiat doloremque molestiae corporis odio dolores, aperiam consequuntur. Ipsum dolore animi, quae delectus fuga tempora saepe laudantium velit asperiores! Omnis doloremque dicta, deserunt possimus impedit tempore ad fuga ipsum illum obcaecati! Nulla iure iusto, dolore debitis libero, aperiam est dolor voluptates vel laborum dolores qui earum fugit illo amet id.</p>
-    <footer>
-        &copy; 2022 - 2023
-    </footer>
+    <div class="main">
+      <h2>ABOUT MY SCHOOLING LIFE</h2>
+      <h5>AMU CITY HIGH SCHOOL ALIGARH</h5>
+      <div class="school">I Came to Aligarh in May 2010, after qualifying 6th entrance of AMU took
+        admission in AMU City High School from that school I completed 10th class.
+        <br>
+        I miss every single moment spent in that school, where my childhood has passed, the teachers of that school have
+        always supported us.
+        When I was in class 6th my class was Sattar Abbas Sir who teach us English Subject and Science teacher was
+        Noor-e-Saba mam both teacher was my favourite teachers.
+        In our class 98% students are muslims and we had a lot of brotherhood.
+        <br>
+        At that time My school principal was Syed Tanveer Nabi who was a genius person
+        He used to help poor children a lot and always motivated us.
+
+        This was a short story from my schooling life.</div>
+
+      <br>
+      <h2>ABOUT DIP in MECH. Engg.</h2>
+      <h5>UNIVERSITY POLYTECHNIC AMU ALIGARH</h5>
+      <div class="school">After completing my board I gave entrance
+        of 11th Science & Diploma and due to not getting good marks I got admission in Diploma in Mech. Engg. in AMU
+        And from that, I completed my Diploma Engg. At my collage, I met some friends who were not a friends for
+        long period but further became very close friends.
+        We used to bunk classes and smoke at free period, i spent 3 year at Polytechnic, i have not realise it, now those friends of
+        mine are studing from AMU Aligarh and I have took admission at Integral University Lucknow in B-Tech.(CSE).
+        Now i miss aligarh a lot.</div>
+      <p>Some lines for Aligarh</p>
+      <p class="shairy">
+        لہو کو لہو کہتے ہیں پانی ہم نہیں کہتے
+        <br>
+        کبھی محلوں کی رقاصہ کو رانی ہم نہیں کہتے
+        <br>
+        یہیں ایک بات ہے کے تاریخ آج بھی ہم پر ناز کرتی ہے
+        <br>
+        تاریخ کہتے ہیں کہانی ہم نہیں کہتے
+      </p>
+    </div>
+  </div>
+  <div id="footer">
+    <h4>ASAD ALAM</h4>
+    Student:- B-Tech in (CSE) 2nd Year
+    <br>
+    From:- Integral University Lucknow
+  </div>
+
 </body>
 
 </html>
