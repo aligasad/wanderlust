@@ -5,7 +5,8 @@
   <title>Page Title</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Rubik+Distressed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Rubik+Distressed&family=Satisfy&display=swap"
+    rel="stylesheet">
   <script src="https://kit.fontawesome.com/d300c1b491.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,7 +67,6 @@
     }
 
     .school {
-      word-break: break-all;
       word-spacing: 2px;
       background-color: rgba(75, 76, 73, 0.458);
       width: 100%;
@@ -92,8 +92,9 @@
         flex-direction: column;
       }
     }
-    @media  screen and (max-width: 400px) {
-      h1{
+
+    @media screen and (max-width: 400px) {
+      h1 {
         text-align: center;
       }
     }
@@ -132,7 +133,7 @@
     .email:hover {
       transition: 2s;
       cursor: zoom-in;
-      background-color: rgb(162, 195, 28);
+      background-color: yellow;
     }
 
     h4 {
@@ -141,24 +142,66 @@
     }
 
     .email {
-      padding: 3px;
-      background-color: rgb(197, 147, 147);
+      padding: 6px;
+      font-family: Satisfy;
+      /* background-color: rgb(197, 147, 147); */
       color: rgb(16, 7, 12);
-      border: solid 2px black;
+      /* border: solid 2px black; */
       border-radius: 4px;
       text-decoration: none;
     }
-    .shairy{
+
+    .shairy {
       cursor: pointer;
       text-shadow: 4px 4px 6px rgb(200, 172, 14);
       word-spacing: 2px;
-      font-size: 19px;
+      font-size: 13px;
       font-weight: bold;
       text-align: center;
     }
-    .shairy:hover{
+
+    .shairy:hover {
       transition: 3s;
       color: crimson;
+    }
+
+    .h4 {
+      font-family: DynaPuff;
+    }
+
+    .bar {
+      width: 250px;
+      height: 6px;
+      margin: 4px 0;
+      background-image: linear-gradient(to right, rgba(15, 121, 91, 0.584) var(--variable), rgba(149, 149, 175, 0.539) 0);
+    }
+
+    .line {
+      margin-top: 20px;
+      border-bottom: 3px solid;
+    }
+
+    .title {
+      font-weight: bold;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .smjh {
+      font-weight: bold;
+      color: rgb(112, 55, 5);
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    li{
+      list-style-type: none;
+      padding: 2px 0;
+    }
+    #strebgth{
+      padding: 7px 0;
+    }
+    .living{
+      font-size: 15px;
+      list-style-type: none;
+      padding: 4px 0;
     }
   </style>
 </head>
@@ -167,19 +210,20 @@
 
   <!-- Note -->
   <div style="background:yellow;padding:5px">
-    <h4 style="text-align:center"><b>ABOUT MYSELF</b></h4>
+    <h4 style="text-align:center"><b><i class="fa-solid fa-location-crosshairs"></i> ABOUT MYSELF</b></h4>
   </div>
 
   <!-- Header -->
   <div class="header">
-    <h1>@wanderlust__026</h1>
-    <a class="email" href="mailto:asadalam4291@gmail.com">asadalam4291@gmail.com</a>
+    <h1><i class="fa-brands fa-instalod"></i> wanderlust__026</h1>
+    <a class="email" href="mailto:asadalam4291@gmail.com"><i class="fa-solid fa-envelope"></i> asadalam4291@gmail.com</a>
   </div>
 
   <!-- Navigation Bar -->
   <div class="navbar">
     <a href="https://www.facebook.com/asadalam.alam.7"><i class="fa-brands fa-facebook"></i> Facebook</a>
-    <a href="https://instagram.com/wanderlust__026?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i> Instagram</a>
+    <a href="https://instagram.com/wanderlust__026?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i>
+      Instagram</a>
     <a href="tel:7417331926"><i class="fa-solid fa-address-book"></i> Contact</a>
     <a href="#footer"><i class="fa-solid fa-circle-info"></i> About</a>
   </div>
@@ -187,38 +231,85 @@
   <div class="row">
     <div class="side">
       <h2>ASAD ALAM</h2>
-      <h5>In Aligarh - Jan 2010 to July 2022</h5>
-      <h5>Current Location - Lucknow(UP32)</h5>
-      <div class="image"><img src="mypic.jpg" height="300px"></div>
+      <div class="image"><img src="passportsize.jpg" height="200px"></div>
+      <div>
+        <ul>
+          <li class="living"><b><i><u>In Aligarh - Jan 2010 to July 2022</u></i></b></li>
+          <li class="living"><b><i><u>Current Location - Lucknow(UP32)</u></i></b></li>
+        </ul>
+        <div class="line"></div>
+      </div>
+      <div>
+        <h4 class="title"><i class="fa-solid fa-id-card-clip"></i> PERSIONAL DETAILS</h4>
+        <ul>
+          <li><b><i class="fa-solid fa-forward"></i> S/o :</b> <b> Mohd Amil</b></li>
+          <li><b><i class="fa-solid fa-forward"></i> Date of Birth :</b> 21/07/2001</li>
+          <li><b><i class="fa-solid fa-forward"></i> Gender :</b> Male</li>
+          <li><b><i class="fa-solid fa-forward"></i> Religion :</b> Islam</li>
+          <li><b><i class="fa-solid fa-forward"></i> Marital Status :</b> Single</li>
+          <li><b><i class="fa-solid fa-forward"></i> Nationality :</b> Indian</li>
+        </ul>
+      </div>
+      <div>
+        <div class="line"></div>
+        <h4 class="title"><i class="fa-solid fa-rocket"></i> SKILLS</h4>
+        <div class="smjh">AutoCad<div class="bar" style="--variable: 80%"></div>
+        </div>
+        <div class="smjh">MS Word<div class="bar" style="--variable: 80%"></div>
+        </div>
+        <div class="smjh">HTLM<div class="bar" style="--variable: 85%"></div>
+        </div>
+        <div class="smjh">CSS<div class="bar" style="--variable: 60%"></div>
+        </div>
+        <div class="smjh">Bootstrap<div class="bar" style="--variable: 50%"></div>
+        </div>
+        <div class="smjh">Java Script<div class="bar" style="--variable: 50%"></div>
+        </div>
+        <div class="smjh">Python<div class="bar" style="--variable: 50%"></div>
+        </div>
+      </div>
     </div>
+    <!-- <div class="line"></div> -->
+
     <div class="main">
-      <h2>ABOUT MY SCHOOLING LIFE</h2>
-      <h5>AMU CITY HIGH SCHOOL ALIGARH</h5>
-      <div class="school">I Came to Aligarh in May 2010, after qualifying 6th entrance of AMU took
+      <h2>ALIG'S LIFE <i class="fa-solid fa-face-grin-hearts"></i></h2>
+      <hr>
+      
+      <div class="school">
+        <h5><i class="fa-solid fa-school"></i> AMU CITY HIGH SCHOOL ALIGARH(2012-2017)</h5>
+        I Came to Aligarh in <b>May 2010</b>, after <b>qualifying 6th entrance</b> of AMU took
         admission in AMU City High School from that school I completed 10th class.
         <br>
-        I miss every single moment spent in that school, where my childhood has passed, the teachers of that school have
+        <i>I miss every single moment spent in that school, where my childhood has passed.</i> The teachers of that school have
         always supported us.
-        When I was in class 6th my class was Sattar Abbas Sir who teach us English Subject and Science teacher was
-        Noor-e-Saba mam both teacher was my favourite teachers.
-        In our class 98% students are muslims and we had a lot of brotherhood.
+        In our class <b>98% students are muslims</b> and we had a lot of brotherhood.
         <br>
-        At that time My school principal was Syed Tanveer Nabi who was a genius person
-        He used to help poor children a lot and always motivated us.
-
-        This was a short story from my schooling life.</div>
-
-      <br>
-      <h2>ABOUT DIP in MECH. Engg.</h2>
-      <h5>UNIVERSITY POLYTECHNIC AMU ALIGARH</h5>
-      <div class="school">After completing my board I gave entrance
+        At that time My school principal was <b>Syed Tanveer Nabi</b> who was a genius person.
+        <hr>
+        <h5><i class="fa-solid fa-graduation-cap"></i> UNIVERSITY POLYTECHNIC AMU ALIGARH (2018-2021)</h5>
+        After completing <b><i>class 10th(in 2017)</i></b> I gave entrance
         of 11th Science & Diploma and due to not getting good marks I got admission in Diploma in Mech. Engg. in AMU
-        And from that, I completed my Diploma Engg. At my collage, I met some friends who were not a friends for
+        And from that, <b>I completed my Diploma Engg. at University polytechnic.</b> <br> I met some friends who were not a friends for
         long period but further became very close friends.
-        We used to bunk classes and smoke at free period, i spent 3 year at Polytechnic, i have not realise it, now those friends of
+        <br> Now
+        those friends of
         mine are studing from AMU Aligarh and I have took admission at Integral University Lucknow in B-Tech.(CSE).
-        Now i miss aligarh a lot.</div>
-      <p>Some lines for Aligarh</p>
+        <i style="color: rgb(197, 12, 18);"> <br> I spent my 13 year in Aligarh, i have not realise it.</i>
+        <br> Now i miss aligarh a lot.
+        
+        This was a short story from my schooling life.
+      </div>
+      <div>
+        <div class="line"></div>
+        <h4 class="title"><u><i class="fa-solid fa-trophy"></i> HOBBIES</u></h4>
+          <li><i><i class="fa-solid fa-forward"></i> Travelling Hill Station,</i></li>
+          <li><i><i class="fa-solid fa-forward"></i> Video or Photo Editing.</i></li>
+        <h4 class="title"><u><i class="fa-solid fa-virus-covid-slash"></i> STRENGTH</u></h4>
+        <li><i class="fa-solid fa-forward"></i> Responsinle and polite, Decision Making</li>
+        <li><b><i><i class="fa-solid fa-forward"></i> Hardworking and Discipline</i></b></li>
+        <div class="line"></div>
+      </div>
+      <p><b><i>Some lines for Aligarh</i></b></p>
       <p class="shairy">
         لہو کو لہو کہتے ہیں پانی ہم نہیں کہتے
         <br>
