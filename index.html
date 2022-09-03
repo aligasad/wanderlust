@@ -5,7 +5,7 @@
   <title>Page Title</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Exo&family=Francois+One&family=Fredoka+One&family=Kaushan+Script&family=Quattrocento+Sans&family=Righteous&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=DynaPuff&family=Exo&family=Francois+One&family=Fredoka+One&family=Kaushan+Script&family=Quattrocento+Sans&family=Righteous&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/d300c1b491.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,9 +31,10 @@
     /* Style the top navigation bar */
     .navbar {
       display: flex;
+      font-family: 'Francois One', sans-serif;
+      font-size: 13px;
       background-color: #333;
     }
-
     /* Style the navigation bar links */
     .navbar a {
       color: white;
@@ -87,6 +88,7 @@
       padding: 20px;
       color: rgb(251, 244, 253);
       font-family: 'Kaushan Script', cursive;
+      font-size: 12px;
       text-align: center;
       background: rgb(120, 31, 31);
     }
@@ -95,6 +97,7 @@
 
       .row,
       .navbar {
+
         flex-direction: column;
       }
     }
@@ -112,7 +115,7 @@
 
     h1 {
       text-align: center;
-      font-family: DynaPuff;
+      font-family: 'DynaPuff', cursive;
       font-size: 25px;
       /* font-family: DynaPuff; */
       cursor: pointer;
@@ -125,7 +128,7 @@
     }
 
     h2 {
-      padding: 8px;
+      padding: 6px 0;
       font-family: DynaPuff;
       cursor: pointer;
     }
@@ -150,7 +153,7 @@
 
     .email {
       padding: 6px;
-      font-family: Satisfy;
+      font-family:'Dancing Script', cursive;;
       /* background-color: rgb(197, 147, 147); */
       color: rgb(16, 7, 12);
       /* border: solid 2px black; */
@@ -201,6 +204,7 @@
     }
     li{
       list-style-type: none;
+      font-size: 12px;
       padding: 2px 0;
     }
     #strebgth{
@@ -220,6 +224,13 @@
     }
     .story{
       text-indent: 50px;
+    }
+    .stor{
+      text-indent: 25px;
+    }
+    #lineup{
+      margin-top: 0px;
+      margin-bottom: 2px;
     }
   </style>
 </head>
@@ -249,7 +260,7 @@
   <div class="row">
     <div class="side">
       <h2>ASAD ALAM</h2>
-      <div class="image"><img src="mypic.jpg" height="200px"></div>
+      <div class="image"><img src="passportsize.jpg" height="200px"></div>
       <div>
         <ul>
           <li class="living">In Aligarh - Jan 2010 to July 2022</li>
@@ -290,8 +301,17 @@
     <!-- <div class="line"></div> -->
 
     <div class="main">
+      <div>
+        <div class="line" id="lineup"></div>
+        <h4 class="title"><u><i class="fa-solid fa-trophy"></i> HOBBIES</u></h4>
+          <li><i><i class="fa-solid fa-forward"></i> Travelling Hill Station,</i></li>
+          <li><i><i class="fa-solid fa-forward"></i> Video or Photo Editing.</i></li>
+        <h4 class="title"><u><i class="fa-solid fa-virus-covid-slash"></i> STRENGTH</u></h4>
+        <li><i class="fa-solid fa-forward"></i> Responsible and polite, Decision Making</li>
+        <li><b><i><i class="fa-solid fa-forward"></i> Hardworking and Discipline</i></b></li>
+        <div class="line"></div>
+      </div>
       <h2>ALIG'S LIFE <i class="fa-solid fa-face-grin-hearts"></i></h2>
-      <hr>
       
       <div class="school">
         <h5 class="eduname"><i class="fa-solid fa-school"></i> AMU CITY HIGH SCHOOL ALIGARH(2012-2017)</h5>
@@ -320,16 +340,13 @@
           
           This was a short story from my schooling life.
         </div>
-      </div>
-      <div>
-        <div class="line"></div>
-        <h4 class="title"><u><i class="fa-solid fa-trophy"></i> HOBBIES</u></h4>
-          <li><i><i class="fa-solid fa-forward"></i> Travelling Hill Station,</i></li>
-          <li><i><i class="fa-solid fa-forward"></i> Video or Photo Editing.</i></li>
-        <h4 class="title"><u><i class="fa-solid fa-virus-covid-slash"></i> STRENGTH</u></h4>
-        <li><i class="fa-solid fa-forward"></i> Responsinle and polite, Decision Making</li>
-        <li><b><i><i class="fa-solid fa-forward"></i> Hardworking and Discipline</i></b></li>
-        <div class="line"></div>
+        <div>
+          <hr>
+          <div class="line">
+            <h4 class="title"><u><i class="fa-solid fa-trophy"></i> DECLERATION</u></h4>
+          <li class="stor"><i><i class="fa-solid fa-forward"></i> I herby decleration that the information furnished above is true to the best of my knowledge and belief.</i></li>
+          </div>
+        </div>
       </div>
       <p><b><li>Some lines for Aligarh</li></b></p>
       <p class="shairy">
