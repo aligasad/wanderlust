@@ -85,13 +85,16 @@
 
     .image {
       text-align: center;
-      background-color: rgba(100, 19, 6, 0.954);
+      background-color: rgba(156, 187, 56, 0.954);
       width: 100%;
       padding: 15px;
-      border-radius: 10px;
-      border: solid 5px;
+      border-radius: 5px;
+      border: solid 2px;
     }
-
+    .image:hover{
+      background-color: coral;
+      transition: 1.5s;
+    }
     #footer {
       padding: 20px;
       color: rgb(251, 244, 253);
@@ -101,7 +104,7 @@
       background: rgb(120, 31, 31);
     }
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 30px) {
 
       .row,
       .navbar {
@@ -142,34 +145,15 @@
     }
 
     h2:hover {
-      background-color: chartreuse;
+      background-color: rgb(57, 110, 4);
       padding: 8px;
       transition: 3s;
     }
-
-    .email:hover {
-      transition: 2s;
-      cursor: zoom-in;
-      background-color: yellow;
-    }
-
     h4 {
       font-size: 16px;
       cursor: pointer;
       font-family: DynaPuff;
     }
-
-    .email {
-      padding: 6px;
-      font-family: 'Dancing Script', cursive;
-      ;
-      /* background-color: rgb(197, 147, 147); */
-      color: rgb(16, 7, 12);
-      /* border: solid 2px black; */
-      border-radius: 4px;
-      text-decoration: none;
-    }
-
     .shairy {
       cursor: pointer;
       text-shadow: 4px 4px 6px rgb(200, 172, 14);
@@ -200,12 +184,12 @@
       background-image: linear-gradient(to right, rgba(15, 121, 91, 0.584) var(--variable), rgba(149, 149, 175, 0.539) 0);
     }
 
-    .line {
+    #line {
       margin-top: 20px;
       border-bottom: 3px solid;
     }
 
-    .title {
+    #title {
       font-weight: bold;
       font-family: 'Francois One', sans-serif;
     }
@@ -259,30 +243,30 @@
 <body>
 
   <!-- Note -->
-  <div style="background:yellow;padding:2px">
+  <div style="background:rgb(126, 126, 35);padding:2px">
     <h4 style="text-align:center"><b><i class="fa-solid fa-location-crosshairs"></i> ABOUT MYSELF</b></h4>
   </div>
 
   <!-- Header -->
   <div class="header">
     <h1><i class="fa-brands fa-instalod"></i> wanderlust__026</h1>
-    <a class="email" href="mailto:asadalam4291@gmail.com"><i class="fa-solid fa-envelope"></i>
-      asadalam4291@gmail.com</a>
   </div>
 
   <!-- Navigation Bar -->
   <div class="navbar">
-    <a href="https://www.facebook.com/asadalam.alam.7"><i class="fa-brands fa-facebook"></i> Facebook</a>
-    <a href="https://instagram.com/wanderlust__026?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i>
-      Instagram</a>
-    <a href="tel:7417331926"><i class="fa-solid fa-address-book"></i> Contact</a>
-    <a href="#achieve"><i class="fa-solid fa-circle-info"></i> About</a>
+    <a href="https://www.facebook.com/asadalam.alam.7"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://instagram.com/wanderlust__026?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+    <a href="tel:7417331926"><i class="fa-solid fa-address-book"></i></a>
+    <a class="email" href="mailto:asadalam4291@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    <a href="#line"><i class="fa-solid fa-shield"></i></a>
+    <a href="#footer"><i class="fa-solid fa-circle-info"></i></a>
+    
   </div>
   <!-- The flexible grid (content) -->
   <div class="row">
     <div class="side">
-      <h2 class="title" style="color: rgb(113, 24, 2); font-size: 0.9cm;">ASAD ALAM (Alig)</h2>
-      <div class="image"><img src="mypic.jpg" height="220px"></div>
+      <h2 id="title" style="color: rgb(113, 24, 2); font-size: 0.9cm;">ASAD ALAM (Alig)</h2>
+      <div class="image"><img src="passportsize.jpg" height="220px"></div>
       <div>
         <ul>
           <li class="living">In Aligarh - Jan 2010 to July 2022</li>
@@ -291,7 +275,7 @@
         <div class="line"></div>
       </div>
       <div>
-        <h4 class="title"><i class="fa-solid fa-id-card-clip"></i> PERSIONAL DETAILS</h4>
+        <h4 id="title"><i class="fa-solid fa-id-card-clip"></i> PERSIONAL DETAILS</h4>
         <ul>
           <li><b><i class="fa-solid fa-forward"></i> S/o :</b> <b> Mohd Amil</b></li>
           <li><b><i class="fa-solid fa-forward"></i> Date of Birth :</b> 21/07/2001</li>
@@ -303,7 +287,7 @@
       </div>
       <div>
         <div class="line"></div>
-        <h4 class="title"><i class="fa-solid fa-rocket"></i> SKILLS</h4>
+        <h4 id="title"><i class="fa-solid fa-rocket"></i> SKILLS</h4>
         <div class="smjh"><i class="fa-solid fa-golf-ball-tee"></i> Auto Cad<div class="bar" style="--variable: 80%">
           </div>
         </div>
@@ -316,12 +300,13 @@
         <div class="smjh"><i class="fa-brands fa-bootstrap"></i> Bootstrap<div class="bar" style="--variable: 50%">
           </div>
         </div>
-        <div class="smjh"><i class="fa-brands fa-square-js"></i> Java Script<div class="bar" style="--variable: 50%">
-          </div>
+        
         </div>
-        <div class="smjh"><i class="fa-brands fa-python"></i> Python<div class="bar" style="--variable: 50%"></div>
+        <div class="smjh"><i class="fa-brands fa-python"></i> Python<div class="bar" style="--variable: 40%"></div>
         </div>
-        <div class="smjh"><i class="fa-solid fa-c"></i> -C Language<div class="bar" style="--variable: 40%"></div>
+        <div class="smjh"><i class="fa-brands fa-square-js"></i> JavaScript<div class="bar" style="--variable: 30%"></div>
+        </div>
+        <div class="smjh"><i class="fa-solid fa-c"></i> -C Language<div class="bar" style="--variable: 45%"></div>
         </div>
       </div>
     </div>
@@ -330,11 +315,11 @@
     <div class="main">
       <div>
         <div class="line" id="lineup"></div>
-        <h4 class="title"><u><i class="fa-solid fa-trophy"></i> HOBBIES</u></h4>
+        <h4 id="title"><u><i class="fa-solid fa-trophy"></i> HOBBIES</u></h4>
         <li><i><i class="fa-solid fa-forward"></i> Travelling Hill Station,</i></li>
         <li><i><i class="fa-solid fa-forward"></i> Video or Photo Editing.</i></li>
         <hr>
-        <h4 class="title"><u><i class="fa-solid fa-virus-covid-slash"></i> STRENGTH</u></h4>
+        <h4 id="title"><u><i class="fa-solid fa-virus-covid-slash"></i> STRENGTH</u></h4>
         <li><i class="fa-solid fa-forward"></i> Responsible and polite, Decision Making</li>
         <li><b><i><i class="fa-solid fa-forward"></i> Hardworking and Discipline</i></b></li>
         <div class="line"></div>
@@ -373,15 +358,14 @@
         </div>
         <div>
           <hr>
-          <div class="line">
-            <h4 class="title" style="color: rgb(11, 94, 3);"><u><i class="fa-solid fa-trophy"></i> DECLERATION</u></h4>
+          <div id="line">
+                <h4 id="title" style="color: rgb(11, 94, 3);"><u><i class="fa-solid fa-certificate"></i> CERTIFICATES</u></h4>
+                <img src="/HTML_certificate.jpg" alt="HTML" height="170" style="padding: 5px;">
+                <img src="/CSS_certificate.jpg" alt="HTML" height="170px" style="padding: 5px;">
+      <img src="/jQuery_certificate.jpg" alt="HTML" height="170px" style="padding: 5px;">
+      <h4 id="title" style="color: rgb(11, 94, 3);"><u><i class="fa-solid fa-trophy"></i> DECLERATION</u></h4>
             <li class="stor"><i><i class="fa-solid fa-forward"></i> I herby decleration that the information furnished
                 above is true to the best of my knowledge and belief.</i></li>
-                <hr>
-                <h4 class="title" style="color: rgb(11, 94, 3);"><u><i class="fa-solid fa-certificate"></i> CERTIFICATES</u></h4>
-                <img src="HTML_certificate.jpg" alt="HTML" height="170" style="padding: 5px;">
-                <img src="CSS_certificate.jpg" alt="HTML" height="170px" style="padding: 5px;">
-      <img src="jQuery_certificate.jpg" alt="HTML" height="170px" style="padding: 5px;">
           </div>
         </div>
       </div>
